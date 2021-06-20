@@ -44,7 +44,7 @@ namespace Trabalho_Bimestral_Carro.Areas.Cadastros.Controllers
         #region Create - POST
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CarroID ,Cor, Marca, Fabricante")] Carro carro)
+        public async Task<IActionResult> Create([Bind("Cor, Marca, Fabricante")] Carro carro)
         {
             try
             {
