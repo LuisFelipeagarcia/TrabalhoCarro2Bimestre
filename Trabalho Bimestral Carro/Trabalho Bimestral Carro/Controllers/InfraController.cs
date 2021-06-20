@@ -11,6 +11,7 @@ using Trabalho_Bimestral_Carro.Models.Infra;
 
 namespace Trabalho_Bimestral_Carro.Controllers
 {
+    [Authorize]
     public class InfraController : Controller
     {
         private readonly UserManager<UsuarioDaAplicacao> _userManager;
